@@ -1,0 +1,15 @@
+$kind: http-request
+name: New Request
+url: http://127.0.0.1:5000/user/register
+method: POST
+body:
+  type: json
+  content: |-
+    {
+        "username": "NikithaSri",
+        "useremail": "nikithasiddamsetti50@gmail.com",
+        "useraddress": "Vijayawada",
+        "userpassword": "Nikitha@2005",
+        "useragree": "on"
+    }
+order: 3000

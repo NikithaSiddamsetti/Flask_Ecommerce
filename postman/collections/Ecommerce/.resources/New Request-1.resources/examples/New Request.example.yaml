@@ -1,0 +1,36 @@
+$kind: http-example
+request:
+  url: http://127.0.0.1:8000/admin/register
+  method: POST
+  body:
+    type: json
+    content: "{\r
+
+      \    \"username\":\"Nikitha\",\r
+
+      \    \"useremail\":\"siddamnikitha94@gmail.com\",\r
+
+      \    \"useraddress\":\"Kanuru,Vijayawada\",\r
+
+      \    \"userpassword\":\"Nikitha@123\",\r
+
+      \    \"useragree\":\"on\"\r
+
+      }"
+response:
+  statusCode: 200
+  statusText: OK
+  headers:
+    server: Werkzeug/3.1.9 Python/3.11.9
+    date: Tue, 13 Oct 2026 05:22:54 GMT
+    content-type: application/json
+    content-length: "84"
+    connection: close
+  body:
+    type: json
+    content: |-
+      {
+        "message": "User registration otp send to given email",
+        "status": "success"
+      }
+order: 1000

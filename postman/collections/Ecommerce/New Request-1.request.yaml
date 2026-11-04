@@ -1,0 +1,21 @@
+$kind: http-request
+name: New Request
+url: http://127.0.0.1:8000/admin/register
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \    \"username\":\"Nikitha\",\r
+
+    \    \"useremail\":\"siddamnikitha94@gmail.com\",\r
+
+    \    \"useraddress\":\"Kanuru,Vijayawada\",\r
+
+    \    \"userpassword\":\"Nikitha@123\",\r
+
+    \    \"useragree\":\"on\"\r
+
+    }"
+examples: .resources/New Request-1.resources/examples
+order: 2000
